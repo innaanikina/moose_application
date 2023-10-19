@@ -43,7 +43,7 @@ public class PredictionAdapter extends RecyclerView.Adapter<PredictionAdapter.Pr
         holder.hogCountTextView.setText("Кабаны: " + prediction.getHog_count());
         holder.lynxCountTextView.setText("Рыси: " + prediction.getLynx_count());
 
-        byte[] imageBytes = Base64.decode(prediction.getPhoto(), Base64.DEFAULT);
+        byte[] imageBytes = Base64.decode(prediction.getPhoto(), Base64.NO_WRAP);
         Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
         holder.photoImageView.setImageBitmap(bitmap);
     }

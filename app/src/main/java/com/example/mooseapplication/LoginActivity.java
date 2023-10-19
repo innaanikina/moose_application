@@ -21,10 +21,9 @@ import okhttp3.Credentials;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import okhttp3.ResponseBody;
 
 public class LoginActivity extends AppCompatActivity {
-    private static final String BASE_URL = "http://10.0.2.2:5000/";
+    private static final String BASE_URL = "http://37.139.33.16:5000/";
     private EditText usernameEditText;
     private EditText passwordEditText;
     private OkHttpClient client;
